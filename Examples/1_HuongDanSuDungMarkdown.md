@@ -101,7 +101,7 @@ cú pháp:
 #### 8.9. Checkbox
 Cú pháp:
 
-- [ ] checkboox
+- [ ] checkbox
 - [x] checked
 
 
