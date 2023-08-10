@@ -1,5 +1,5 @@
 # 1. Download và cài đặt
-Download file cài đặt  git theo đúng flatform để cài đặt trên máy tính : [Link download](https://git-scm.com/download/win)
+Download file cài đặt  git theo đúng platform để cài đặt trên máy tính : [Link download](https://git-scm.com/download/win)
 Cấu hình
 Mọi cấu hình của git được đặt trong file gitconfig. Một số lệnh cấu hình ban đầu khi sử dụng
 # 2. Thiết lập tên trên hệ thống git:
