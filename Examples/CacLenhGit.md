@@ -133,3 +133,33 @@ git branch -D <tên nhánh cần xóa>
 
 git push origin --delete <tên nhánh cần xóa>
 ```
+# 4. Các clone một dự án có sẵn trên github về máy tính
+- Bước 1: Phải tạo một repository
+- Bước 2: thêm tài khoản thành viên vào repository nếu làm team.
+- Bước 3: Chép link clone của repository (theo https hoặc ssl)
+- Bước 4: sử dụng lệnh để clone dự án về
+  - Bước 4.1: Tạo một thư mục trống trại local. và mở git bash
+  - Bước 4.2: Thực hiện lệnh
+```
+git clone <đường dẫn github>
+```
+- Bước 5: Sau khi có thêm file và thực hiện dự án tiến hành cập nhật lên server như sau:
+
+```
+> git add .
+> git commit -m "nội dung commit"
+> git push origin main
+> git pull origin main
+```
+# 5. Thực hiện đẩy một dự án trên máy tính lên github
+- Bước 1: Tạo repository trên trang github
+- Bước 2: Tại project trên local (máy tính cá nhân) thực hiện các lệnh trong gitbash
+
+```
+> git init
+> git add README.md
+> git Commit -m "init"
+> git git branch -M main
+> git remote add origin <tên path của repository mới tạo>
+> git push -u origin main
+```
