@@ -107,3 +107,13 @@ git push origin main
 ```
 git pull origin main
 ```
+
+## Tạo nhánh mới
+```
+git branch -b <tên nhánh>
+```
+
+## checkout vào nhánh để thực hiện
+```
+git checkout <tên nhánh>
+```
