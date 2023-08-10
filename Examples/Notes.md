@@ -38,7 +38,7 @@ ___từ cần in đậm in nghiêng___
 ### 6. Chữ gạch giữa
 Cú pháp:
 
-~~Khuyen Mai~~
+~~khuyễn mãi~~
 
  ### 7.Code trong dòng - inline code
  Cú pháp:
@@ -101,7 +101,7 @@ cú pháp:
 #### 8.9. Checkbox
 Cú pháp:
 
-- [ ] checkboox
+- [ ] checkbox
 - [x] checked
 
 
