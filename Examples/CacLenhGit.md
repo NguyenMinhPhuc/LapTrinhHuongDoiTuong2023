@@ -117,3 +117,19 @@ git branch -b <tên nhánh>
 ```
 git checkout <tên nhánh>
 ```
+## Xem hiện tại đang ở nhánh nào
+```
+git branch
+```
+## xóa một nhánh
+- Cần checkout sang nhánh khác
+- cú pháp xóa nhánh ở local
+- Xóa nhánh ở server
+
+```
+git checkout main
+
+git branch -D <tên nhánh cần xóa>
+
+git push origin --delete <tên nhánh cần xóa>
+```
