@@ -104,7 +104,7 @@ nếu kết quả xuất ra thông báo
 
 Thì đã add thành công!
 
--** Bước 9**: Tiến hành chạy ứng dụng để kiểm tra kết quả
+- **Bước 9**: Tiến hành chạy ứng dụng để kiểm tra kết quả
 
 Cách 1: sử dụng lệnh
 ```
