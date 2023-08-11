@@ -50,6 +50,7 @@ Cú pháp:
  #### 8.1. Trích dẫn - Blockquote
  cú pháp:
  > trích dẫn dòng 1
+ 
  > Trích đẫn dòng 2
 
  #### 8.2 Danh sách có thứ tự - Order list
