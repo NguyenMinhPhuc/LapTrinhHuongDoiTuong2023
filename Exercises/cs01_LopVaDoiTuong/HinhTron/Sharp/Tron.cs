@@ -27,7 +27,7 @@ namespace HinhTron.Sharp
         }
 
         public float ChuVi(){
-            return banKinh*3.14f;
+            return banKinh*3.14;
         }
         public float DienTich(){
 
