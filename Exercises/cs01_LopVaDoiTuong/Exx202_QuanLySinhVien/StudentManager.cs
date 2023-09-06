@@ -25,8 +25,8 @@ namespace Exx202_QuanLySinhVien
         //Display list students
         public void DisplayAllStudent()
         {
-            Console.WriteLine("List of Students:");
-            Console.Write("----------------------");
+            Console.WriteLine("\nList of Students:");
+            Console.WriteLine("----------------------");
             foreach (var student in students)
             {
                 student.DisplayInfor();
@@ -54,7 +54,6 @@ namespace Exx202_QuanLySinhVien
             {
                 Console.WriteLine("Student not found.");
             }
-
         }
 
         //update student
@@ -70,13 +69,49 @@ namespace Exx202_QuanLySinhVien
                     break;
                 }
             }
-            if(studentUpdate != null){
-                    studentUpdate.Name = name;
-                    studentUpdate.DateOfBirth = dateOfBirth;
-                    studentUpdate.Gender = gender;
-                    studentUpdate.Score = Score;
-                    Console.WriteLine("Student Information Updated successfully.");
-            }else{
+            if (studentUpdate != null)
+            {
+                studentUpdate.Name = name;
+                studentUpdate.DateOfBirth = dateOfBirth;
+                studentUpdate.Gender = gender;
+                studentUpdate.Score = Score;
+                Console.WriteLine("Student Information Updated successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Student not found.");
+            }
+        }
+
+        public void UpdateStudent(string studentID)
+        {
+            Student studentUpdate = null;
+            foreach (Student student in students)
+            {
+                if (student.StudentID == studentID)
+                {
+                    studentUpdate = student;
+                    break;
+                }
+            }
+            if (studentUpdate != null)
+            {
+                  Console.WriteLine("\nInput Student Infor: ");
+                Console.Write("Student Name: ");
+                studentUpdate.Name = Console.ReadLine();
+
+                Console.Write("Date Of Birth: ");
+                studentUpdate.DateOfBirth = Convert.ToDateTime(Console.ReadLine());
+
+                Console.Write("Gender: ");
+                studentUpdate.Gender = Console.ReadLine();
+
+                Console.Write("Score: ");
+                studentUpdate.Score = float.Parse(Console.ReadLine());
+                Console.WriteLine("Student Information Updated successfully.");
+            }
+            else
+            {
                 Console.WriteLine("Student not found.");
             }
         }
@@ -87,9 +122,22 @@ namespace Exx202_QuanLySinhVien
 
             foreach (Student student in students)
             {
-                if(student.StudentID.Contains(keyword))
+                if (student.Name.Contains(keyword))
                 {
                     searchResult.Add(student);
+                }
+            }
+            return searchResult;
+        }
+
+        public Student SearchStudentByID(string studentID)
+        {
+            Student searchResult = null;
+            foreach (Student student in students)
+            {
+                if (student.StudentID.Equals(studentID))
+                {
+                    searchResult = student;
                 }
             }
             return searchResult;
