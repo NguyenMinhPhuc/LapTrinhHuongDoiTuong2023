@@ -89,9 +89,7 @@ internal class Program
             }
 
         } while (true);
-
         Console.ReadLine();
-
     }
     private static int Menu()
     {
@@ -100,7 +98,7 @@ internal class Program
         Console.WriteLine("1. Add Student");
         Console.WriteLine("2. Display All Student");
         Console.WriteLine("3. Search student by id");
-        Console.WriteLine("4. Search studetn by name");
+        Console.WriteLine("4. Search student by name");
         Console.WriteLine("5. Update Student");
         Console.WriteLine("6. Remove Student");
         Console.WriteLine("7. Exit");
