@@ -14,7 +14,7 @@ Bài toán yêu cầu xây dựng một ứng dụng quản lý sinh viên. Mỗ
 
 Dựa vào phân tích bài toán trên, chúng ta có thể xác định một số lớp và đối tượng liên quan:
 
-1. Lớp `Student` (Sinh viên):
+1. Lớp `Student` (Sinh viên): Entity
    - Thuộc tính:
      - Mã sinh viên
      - Tên
@@ -197,4 +197,6 @@ class Program
 
 ` Yêu cầu thêm:
 Tương tự như ví dụ ở trên hay phân tích ứng dụng quản lý nhân sự của một công ty gồm các chức năng sau: 1. Nhập thông tin nhân viên, 2. Phân phòng ban cho nhân viên; 3. tìm kiếm nhân viên theo tên; 4. Tìm kiếm nhân viên theo maNhanVien; 5. cập nhật nhân viên nghỉ làm; 6. Tính lương cho nhân viên; 7. Chuyển phòng ban làm việc; 8. In danh sách nhân viên.
+- Xây dụng chương trình gọi theo menu (Tham khảo bài quản lý sản phẩm)
+- trước khi code có phần phân tích thành phần theo hướng đối tượng
 `
