@@ -4,8 +4,8 @@ Bài tập 1: Xây dựng một lớp cơ sở "Shape" (Hình) với thuộc tí
  ### Hướng dẫn
 - Xác định đội tượng
 - xác định thuộc tính, phương thức của đối tượng
-- Sử khai niệm đặc biệt hóa và tổng quát hóa (LÊN MÔ HÌNH ĐỐI TƯỢNG)
-- thực hiện code 
+- Sử dung khai niệm đặc biệt hóa và tổng quát hóa (LÊN MÔ HÌNH ĐỐI TƯỢNG)
+- thực hiện code
 
 Bài tập 2: Xây dựng một lớp cơ sở "Animal" (Động vật) với thuộc tính "name" (tên) và phương thức "MakeSound" (kêu). Tạo các lớp con "Cat" (Mèo) và "Dog" (Chó) kế thừa từ lớp "Animal" và triển khai phương thức "MakeSound" cho từng lớp con.
 
