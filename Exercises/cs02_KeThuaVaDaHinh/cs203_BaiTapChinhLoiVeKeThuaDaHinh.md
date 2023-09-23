@@ -27,12 +27,12 @@ Phân tích:
 - Teacher:Person
   - field
   - Override Nhap
-  - Overried Xuat
+  - Override Xuat
   - TinhTienGiang
 - Student:Person
 - - field
   - Override Nhap
-  - Overried Xuat
+  - Override Xuat
   - XepLoai
 - PersonManager: quản lý danh sách
   - List

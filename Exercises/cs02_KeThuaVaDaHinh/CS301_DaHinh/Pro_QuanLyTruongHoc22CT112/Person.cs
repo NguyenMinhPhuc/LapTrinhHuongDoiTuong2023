@@ -20,37 +20,37 @@ namespace Pro_QuanLyTruongHoc22CT112
         public bool GioiTinh { get => gioiTinh; set => gioiTinh = value; }
         public DateTime NgaySinh { get => gioiTinh; set => gioiTinh = value; }
         //Method
-        public void Nhap(int index)
+        public virtual void Nhap(int index)
         {
             Console.WriteLine($"Nhap Nguoi thu {index}");
             Console.Write("Ma so: ");
-            maSo=Console.ReadLine();
+            maSo = Console.ReadLine();
 
             Console.Write("Ho: ");
-            ho=Console.ReadLine();
+            ho = Console.ReadLine();
 
             Console.Write("Ten: ");
-            ten=Console.ReadLine();
+            ten = Console.ReadLine();
 
             Console.Write("Gioi tinh (True/False): ");
-            gioiTinh=Convert.ToBoolean(Console.ReadLine());
+            gioiTinh = Convert.ToBoolean(Console.ReadLine());
 
-             Console.Write("Ngay sinh:(dd/mm/yyyy) ");
-            ngaySinh=Convert.ToDateTime( Console.ReadLine());
+            Console.Write("Ngay sinh:(dd/mm/yyyy) ");
+            ngaySinh = Convert.ToDateTime(Console.ReadLine());
             //Nhap dia chi gom
             Console.Write("Dia chi: ");
-            diaChi=Console.ReadLine();
+            diaChi = Console.ReadLine();
             //Nhap So dien thoai
             Console.Write("So dien thoai: ");
-            SoDienThoai=Console.ReadLine();
+            SoDienThoai = Console.ReadLine();
         }
-        public void Xuat()
+        public virtual void Xuat()
         {
             Console.WriteLine($"Ma so: {maSo}");
             Console.WriteLine($"Ho: {ho}");
             Console.WriteLine($"Ten: {ten}");
-            Console.WriteLine($"Ngay sinh: {string.Format("{0:mm/dd/yyyy}",ngaySinh)}");
-            Console.WriteLine("Gioi tinh: {0} ",gioiTinh?"Nam":"Nu");
+            Console.WriteLine($"Ngay sinh: {string.Format("{0:mm/dd/yyyy}", ngaySinh)}");
+            Console.WriteLine("Gioi tinh: {0} ", gioiTinh ? "Nam" : "Nu");
             Console.WriteLine($"Dia chi: {diaChi}");
             Console.WriteLine($"Dien thoai: {soDienThoai}");
         }
