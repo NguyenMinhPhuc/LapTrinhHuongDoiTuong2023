@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pro_QuanLyTruongHoc22CT112
 {
-    public class Person : IPerson
+    public class Person //: IPerson
     {
         //Field
         private string maSo, ho, ten, diaChi, soDienThoai;
@@ -18,7 +18,7 @@ namespace Pro_QuanLyTruongHoc22CT112
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
         public bool GioiTinh { get => gioiTinh; set => gioiTinh = value; }
-        public DateTime NgaySinh { get => gioiTinh; set => gioiTinh = value; }
+        public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
         //Method
         public virtual void Nhap(int index)
         {
@@ -53,6 +53,10 @@ namespace Pro_QuanLyTruongHoc22CT112
             Console.WriteLine("Gioi tinh: {0} ", gioiTinh ? "Nam" : "Nu");
             Console.WriteLine($"Dia chi: {diaChi}");
             Console.WriteLine($"Dien thoai: {soDienThoai}");
+        }
+        public override string ToString()
+        {
+            return string.Format($"{maSo},{ho},{ten},{ngaySinh},{gioiTinh},{diaChi},{SoDienThoai}");
         }
     }
 }

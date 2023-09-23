@@ -40,21 +40,41 @@ namespace Pro_QuanLyTruongHoc22CT112
             diemRenLuyen = Convert.ToDouble(Console.ReadLine());
         }
 
-        public string XepLoai(){
-            string result=string.Empty;
-            if(diemTB>=9){
-                result="Xuat sac";
-            }else if(diemTB>=8){
-                result="Gioi";
-            }else if(diemTB>=7){
-                result="Kha";
-            }else if(diemTB>=6){
-                result="TB kha";
-            }else if(diemTB>=5){
-                result="Trung binh";
-            }else{
-                result="Yeu";
+        public string XepLoai()
+        {
+            string result = string.Empty;
+            if (diemTB >= 9)
+            {
+                result = "Xuat sac";
             }
+            else if (diemTB >= 8)
+            {
+                result = "Gioi";
+            }
+            else if (diemTB >= 7)
+            {
+                result = "Kha";
+            }
+            else if (diemTB >= 6)
+            {
+                result = "TB kha";
+            }
+            else if (diemTB >= 5)
+            {
+                result = "Trung binh";
+            }
+            else
+            {
+                result = "Yeu";
+            }
+            return result;
+        }
+
+        public override string ToString()
+        {
+            string result = "S,";
+            result += base.ToString();
+            result += string.Format($", {lop},{nganh},{diemTB},{DiemRenLuyen}");
             return result;
         }
     }
