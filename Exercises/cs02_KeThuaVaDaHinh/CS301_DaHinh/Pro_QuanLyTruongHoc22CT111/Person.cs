@@ -63,5 +63,10 @@ namespace Pro_QuanLyTruongHoc22CT111
             Console.WriteLine($"Dien thoai: {soDienThoai}");
             Console.WriteLine("---------------------------");
         }
+
+        public override string ToString()
+        {
+            return string.Format($"{maSo},{ho},{ten},{ngaySinh},{gioiTinh},{diaChi},{soDienThoai}");
+        }
     }
 }

@@ -77,5 +77,13 @@ namespace Pro_QuanLyTruongHoc22CT111
             }
             return xepLoai;
         }
+
+        public override string ToString()
+        {
+            string result = "S,";
+            result += base.ToString();
+            result += string.Format($",{lop},{nganh},{diemTB},{diemRL}");
+            return result;
+        }
     }
 }

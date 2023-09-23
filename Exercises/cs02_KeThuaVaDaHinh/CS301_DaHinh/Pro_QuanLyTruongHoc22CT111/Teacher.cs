@@ -50,5 +50,13 @@ namespace Pro_QuanLyTruongHoc22CT111
         {
             return soTietDay * 90000;
         }
+
+        public override string ToString()
+        {
+            string result = "T,";
+            result += base.ToString();
+            result += string.Format($",{hocHam},{HocVi},{SoTietDay}");
+            return result;
+        }
     }
 }

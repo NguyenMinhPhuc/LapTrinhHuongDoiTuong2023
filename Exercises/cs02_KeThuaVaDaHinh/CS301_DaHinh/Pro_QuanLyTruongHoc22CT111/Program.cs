@@ -1,4 +1,6 @@
 ﻿using Pro_QuanLyTruongHoc22CT111;
+using Pro_QuanLyTruongHoc22CT111.Factory;
+using Pro_QuanLyTruongHoc22CT111.Pros;
 
 internal class Program
 {
@@ -6,21 +8,17 @@ internal class Program
     {
         PersonManager personManager = new PersonManager();
 
-        personManager.NhapDanhSach();
+        //   personManager.NhapDanhSach();
 
+        //personManager.XuatDanhSach();
+
+        MyFactory myFactory = new MyFactory();
+        myFactory.CreateFileType(EnumLoaiFile.DAT);
+        string path = @"D:\FilePerson.dat";
+
+        personManager.List = myFactory.FileType.Read(path);
+        // myFactory.FileType.Write(path, personManager.List);
         personManager.XuatDanhSach();
-
-        Console.Write("Nhap Ma So can tim: ");
-        string maSo = Console.ReadLine();
-
-        Person person = personManager.SearchByID(maSo);
-        if (person != null)
-            person.Xuat(1);
-        else
-        {
-            Console.WriteLine("Khong co");
-        }
-
 
     }
 }
