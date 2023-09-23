@@ -1,4 +1,5 @@
-# ví dụ 1:
+# ví dụ 1: QuanLyTruongHoc
+
 Một trường học muốn quản lý thông tin của Gv và sinh viên trong trường bao gồm các thông tin sau: ID, ho, ten, ngaySinh, Giới tính, địa chỉ; nhap thong tin xuất thông tin
 - SinhVien: Lớp, Ngành học, diemTB, DiemRenLuyen, Xếp loại
 
