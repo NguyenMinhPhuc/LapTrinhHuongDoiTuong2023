@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProQuanLyCuaHang.DataStorage
 {
-    internal class FileIINI
+    internal class FileIINI : IFileType
     {
+        public List<Product> Read(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Write(string path, List<Product> products)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

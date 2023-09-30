@@ -14,7 +14,18 @@ namespace ProQuanLyCuaHang.DataStorage
 
         public void CreateStorage(EFileName fileName)
         {
-            throw new NotImplementedException();
+            switch (fileName)
+            {
+                case EFileName.INI:
+                    fileType = new FileIINI();
+                    break;
+                case EFileName.TXT:
+                    fileType = new FileTXT();
+                    break;
+                case EFileName.DAT:
+                    fileType = new FileDAT();
+                    break;
+            }
         }
     }
 }

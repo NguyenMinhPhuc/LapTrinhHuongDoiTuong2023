@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProQuanLyCuaHang.DataStorage
 {
-    internal class FileDAT
+    internal class FileDAT : IFileType
     {
+        public List<Product> Read(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Write(string path, List<Product> products)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

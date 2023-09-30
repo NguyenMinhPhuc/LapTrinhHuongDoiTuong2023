@@ -10,9 +10,11 @@ namespace ProQuanLyCuaHang
     {
         List<Product> products;
 
+        internal List<Product> Products { get => products; set => products = value; }
+
         public StoreManager()
         {
-            products = new List<Product>();
+            Products = new List<Product>();
         }
 
         //Add product
@@ -34,15 +36,15 @@ namespace ProQuanLyCuaHang
                 }
                 else { break; }
                 product.InputProduct();
-                products.Add(product);
+                Products.Add(product);
             }
             Console.WriteLine("Hoan thanh qua trinh nhap san pham");
         }
         //Update Product
         public void UpdateProduct(string productID)
         {
-            Product productUpdate = null;
-            foreach (Product product in products)
+            Product productUpdate = new Product();
+            foreach (Product product in Products)
             {
                 if (product.ProID.Equals(productID))
                 {
@@ -64,6 +66,7 @@ namespace ProQuanLyCuaHang
                 if (productUpdate is ElectronicsProduct)
                 {
                     Console.Write("Hang sx: ");
+
                     ((ElectronicsProduct)productUpdate).Brand = Console.ReadLine();
                 }
                 else if (productUpdate is ClothingProduct)
@@ -79,12 +82,12 @@ namespace ProQuanLyCuaHang
         public bool RemoveProduct(string productID)
         {
             Product productRemove;
-            foreach (Product product in products)
+            foreach (Product product in Products)
             {
                 if (product.ProID.Equals(productID))
                 {
                     productRemove = product;
-                    products.Remove(productRemove);
+                    Products.Remove(productRemove);
                     return true;
                 }
             }
@@ -93,7 +96,7 @@ namespace ProQuanLyCuaHang
         //Print Products
         public void PrintProduct()
         {
-            foreach (Product product in products)
+            foreach (Product product in Products)
             {
                 product.OutputProduct();
             }
@@ -102,7 +105,7 @@ namespace ProQuanLyCuaHang
         public Product SearchByID(string productID)
         {
             Product productSearch = null;
-            foreach (Product product in products)
+            foreach (Product product in Products)
             {
                 if (product.ProID.Equals(productID))
                 { productSearch = product; break; }
@@ -116,7 +119,7 @@ namespace ProQuanLyCuaHang
         {
             List<Product> productsSearch = new List<Product>();
 
-            foreach (Product product in products)
+            foreach (Product product in Products)
             {
                 if (product.ProName.Equals(productName))
                 {
