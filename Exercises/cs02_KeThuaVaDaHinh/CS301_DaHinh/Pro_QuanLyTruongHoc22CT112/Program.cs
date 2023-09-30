@@ -17,8 +17,8 @@ internal class Program
 
         FactoryLoaiFile factoryLoaiFile = new FactoryLoaiFile();
         factoryLoaiFile.CreateLoaiFile(ELoaiFile.TXT);
-        // factoryLoaiFile.LoaiFile.Read("");
-        factoryLoaiFile.LoaiFile.Write($"{Application.StartupPath}",);
+        //factoryLoaiFile.LoaiFile.Read("");
+
 
         string path = "";
     }
