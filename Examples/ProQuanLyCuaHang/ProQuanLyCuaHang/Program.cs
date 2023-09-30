@@ -1,7 +1,13 @@
-﻿internal class Program
+﻿using ProQuanLyCuaHang;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        StoreManager storeManager = new StoreManager();
+        storeManager.AddProduct();
+        storeManager.UpdateProduct("p001");
+
+        storeManager.PrintProduct();
     }
 }

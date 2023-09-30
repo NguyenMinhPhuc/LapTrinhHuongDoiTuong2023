@@ -10,7 +10,7 @@ namespace ProQuanLyCuaHang.DataStorage
 {
     internal interface IProductStorageFactory
     {
-        IFileType fileType { get; set; }
+        IFileType FileType { get; set; }
         void CreateStorage(EFileName fileName);
     }
 }

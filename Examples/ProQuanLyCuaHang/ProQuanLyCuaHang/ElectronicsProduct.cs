@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +18,14 @@ namespace ProQuanLyCuaHang
         {
             base.InputProduct();
             //Them
+            Console.Write("brand: ");
+            brand = Console.ReadLine();
         }
         public override void OutputProduct()
         {
             base.OutputProduct();
             //them
+            Console.WriteLine($"brand: {brand}");
         }
     }
 }

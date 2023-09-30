@@ -18,12 +18,15 @@ namespace ProQuanLyCuaHang
         {
             base.InputProduct();
             //them
+            Console.Write("Size: ");
+            size = Console.ReadLine();
         }
 
         public override void OutputProduct()
         {
             base.OutputProduct();
             //them
+            Console.WriteLine($"Size: {size}");
         }
     }
 }

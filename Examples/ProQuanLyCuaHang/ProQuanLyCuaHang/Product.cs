@@ -22,11 +22,26 @@ namespace ProQuanLyCuaHang
         //method
         public virtual void InputProduct()
         {
+            Console.WriteLine("Nhap san pham");
+            Console.Write("Product ID: ");
+            proID = Console.ReadLine();
+
+            Console.Write("Product Name: ");
+            proName = Console.ReadLine();
+
+            Console.Write("Price: ");
+            price = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Quantity: ");
+            quantity = Convert.ToInt32(Console.ReadLine());
 
         }
         public virtual void OutputProduct()
         {
-
+            Console.WriteLine($" Product ID: {proID}");
+            Console.WriteLine($" Product Name: {proName}");
+            Console.WriteLine($" price: {price}");
+            Console.WriteLine($" quantity:  {quantity}");
         }
     }
 }

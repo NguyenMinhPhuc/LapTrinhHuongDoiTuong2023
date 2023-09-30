@@ -9,7 +9,8 @@ namespace ProQuanLyCuaHang.DataStorage
 {
     internal class ProductStorageFactory : IProductStorageFactory
     {
-        public IFileType fileType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        IFileType fileType;
+        public IFileType FileType { get => fileType; set => fileType = value; }
 
         public void CreateStorage(EFileName fileName)
         {
