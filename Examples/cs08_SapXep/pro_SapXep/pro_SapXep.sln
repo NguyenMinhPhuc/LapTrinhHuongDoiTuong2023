@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pro_SapXep", "pro_SapXep\pro_SapXep.csproj", "{08A7F585-9060-4813-9CEF-44E26DF743E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A7F585-9060-4813-9CEF-44E26DF743E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A7F585-9060-4813-9CEF-44E26DF743E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A7F585-9060-4813-9CEF-44E26DF743E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A7F585-9060-4813-9CEF-44E26DF743E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B84AE15F-6FA8-457D-9C65-474AC90FFA4E}
+	EndGlobalSection
+EndGlobal
