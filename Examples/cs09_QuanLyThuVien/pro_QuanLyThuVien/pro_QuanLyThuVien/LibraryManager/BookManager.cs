@@ -185,12 +185,13 @@ namespace pro_QuanLyThuVien.LibraryManager
                             }
                             else
                             {
+
                                 book = new Novel();
                                 book.Read(line);
                             }
                             books.Add(book);
                         }
-                    }
+                        DateTime.Now  }
                 }
             }
         }

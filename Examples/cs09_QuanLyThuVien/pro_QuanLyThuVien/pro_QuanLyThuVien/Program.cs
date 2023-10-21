@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
         }
+
+        static int Menu()
+        { return 0; }
     }
 }
