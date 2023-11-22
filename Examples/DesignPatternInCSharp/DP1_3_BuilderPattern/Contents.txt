@@ -1,0 +1,9 @@
+﻿1. GoF Definition
+separate the construction of a complex object from its representation so that the same construction processes can create different representations.
+==> 
+Design pattern Builder là một mẫu thiết kế thuộc nhóm Creational Patterns, được sử dụng để tạo ra một đối tượng phức tạp từ các đối tượng đơn giản và từng bước một. Mục tiêu là tách biệt quá trình xây dựng đối tượng từ cách đối tượng được biểu diễn
+
+ví dụ:
+ trong việc lắp ráp một chiếc xe hơi bao gồm rất nhiều thành phần riêng biệt. nên tách việc tạo các đối tượng (thành phần đó ra thành những đối tượng cụ thể). một lớp chịu trách nhiệm tạo đối tượng tổng thể (xe hơi). trong mỗi thành phần sẽ được xây dựng thành những thành phần khác nhau tùy theo yêu cầu.
+
+ Qua việc sử dụng Design pattern Builder, chúng ta có thể linh hoạt xây dựng các đối tượng Product với các thuộc tính khác nhau mà không làm phức tạp quá trình xây 
