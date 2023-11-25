@@ -1,5 +1,7 @@
 ﻿//using DP1_3_BuilderPattern.VD1;
 using DP1_3_BuilderPattern.VD2;
+using System.Data.Common;
+using System.Text;
 
 internal class Program
 {
@@ -28,5 +30,7 @@ internal class Program
         Product p2 = b2.GetVehicle();
         p2.Show();
         Console.ReadLine();
+
+
     }
 }

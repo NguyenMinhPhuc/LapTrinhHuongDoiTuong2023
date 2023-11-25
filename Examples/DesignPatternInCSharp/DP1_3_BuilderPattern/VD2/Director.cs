@@ -17,7 +17,7 @@ namespace DP1_3_BuilderPattern.VD2
             builder.BuildBody();
             builder.InsertWheels();
             builder.AddHeadlights();
-            builder.EndOperations();
+            //  builder.EndOperations();
         }
     }
 }
